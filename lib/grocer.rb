@@ -17,11 +17,10 @@ def consolidate_cart(cart)
   #IF in cart, increment count.
    scanned_cart = []
    cart.each do |itemHash|
-    scanned_cart << item[:count] = 1
+    scanned_cart << itemHash[:count] = 1
    end
+   binding.pry
     return scanned_cart
-    binding.pry
-  
 end
 
 
