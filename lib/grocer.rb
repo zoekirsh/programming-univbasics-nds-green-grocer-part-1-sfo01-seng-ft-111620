@@ -13,8 +13,8 @@ end
 
 def consolidate_cart(cart)
   # REMEMBER: This returns a new Array that represents the cart.
+   scanned_cart = [];
    
-  
   
   
 end
