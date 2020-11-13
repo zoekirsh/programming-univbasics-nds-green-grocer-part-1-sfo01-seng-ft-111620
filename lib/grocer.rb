@@ -20,6 +20,7 @@ def consolidate_cart(cart)
     scanned_cart << item[:count] = 1
    end
     return scanned_cart
+    binding.pry
   
 end
 
