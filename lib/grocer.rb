@@ -13,9 +13,11 @@ end
 
 def consolidate_cart(cart)
   # REMEMBER: This returns a new Array that represents the cart.
-  #Iterate thru the cart and add new items to new cart array with a count. If redundant, increase the count.
+  #Iterate thru the cart and add each item to new cart array with a count IF not already in the cart.
+  #IF in cart, increment count.
    scanned_cart = []
    cart.each do |item|
+     if 
      scanned_cart << item[:count] = 1
       
    end
