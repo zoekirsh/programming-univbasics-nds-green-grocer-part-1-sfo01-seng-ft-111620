@@ -17,7 +17,7 @@ def consolidate_cart(cart)
    scanned_cart = []
    cart.each do |item|
      scanned_cart << item[:count] = 1
-      binding.pry
+      
    end
   
   
