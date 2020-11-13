@@ -16,8 +16,10 @@ def consolidate_cart(cart)
   #Iterate thru the cart and add each item to new cart array with a count IF not already in the cart.
   #IF in cart, increment count.
    scanned_cart = []
-   cart.each do |item|
-     if find_item_by_name_in_collection(item[:item], cart)
+   cart.each do |itemHash|
+     if find_item_by_name_in_collection(itemHash[:item], cart)
+     
+     
      scanned_cart << item[:count] = 1
       
    end
