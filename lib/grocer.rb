@@ -23,7 +23,7 @@ def consolidate_cart(cart)
     else scanned_cart << itemHash[:count] = 1
     end
   end
-   
+  return scanned_cart 
 end
 
 
