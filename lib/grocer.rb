@@ -14,7 +14,8 @@ def consolidate_cart(cart)
    cart.each do |itemHash|
     if find_item_by_name_in_collection(itemHash[:item], scanned_cart)
       itemHash[:count] += 1 
-    else scanned_cart << itemHash[:count] = 1
+    else scanned_cart << itemHash
+      
     end
   end
   return scanned_cart 
