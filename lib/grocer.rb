@@ -3,7 +3,7 @@ require 'pry'
 def find_item_by_name_in_collection(name, collection)
   # Iterates thru collection and returns the full hash for an item matching name. 
   #If no match, returns nil 
-  collection.find 
+  collection.find { |itemHash| itemHash.is_a?(Hash) && itemHash[:item] == name }
 end
 
 def consolidate_cart(cart)
